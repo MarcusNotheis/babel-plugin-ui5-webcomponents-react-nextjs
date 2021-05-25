@@ -4,7 +4,8 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "author": "MarcusNotheis",
   "license": "MIT",
@@ -20,5 +21,15 @@
     "jest": "^26.6.3",
     "prettier": "^2.3.0",
     "typescript": "^4.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcusNotheis/babel-plugin-ui5-webcomponents-react-nextjs.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
 }
