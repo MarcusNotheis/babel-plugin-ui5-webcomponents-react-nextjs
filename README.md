@@ -22,4 +22,3 @@ npm install @marcusnotheis/babel-plugin-ui5-webcomponents-react-nextjs --save-de
 ```
 
 That's it :tada:. You can now run your app by starting `npm run dev`.
- 
