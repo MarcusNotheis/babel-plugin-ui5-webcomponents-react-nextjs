@@ -12,12 +12,12 @@ describe("transform imports", () => {
       plugins: [plugin],
     });
     expect(result.code).toMatchInlineSnapshot(`
-      "import dynamic from \\"next/dynamic\\";
+      "import dynamic from "next/dynamic";
       dynamic(() => import('@ui5/webcomponents/dist/Button'), {
-        \\"ssr\\": false
+        "ssr": false
       })
       dynamic(() => import('@ui5/webcomponents/dist/Assets'), {
-        \\"ssr\\": false
+        "ssr": false
       })"
     `);
   });
@@ -34,24 +34,24 @@ describe("transform imports", () => {
       plugins: [plugin],
     });
     expect(result.code).toMatchInlineSnapshot(`
-      "import dynamic from \\"next/dynamic\\";
+      "import dynamic from "next/dynamic";
       const Avatar = dynamic(() => import('@ui5/webcomponents-react').then(mod => mod['Avatar']), {
-        \\"ssr\\": false
+        "ssr": false
       });
       const Button = dynamic(() => import('@ui5/webcomponents-react/dist/Button').then(mod => mod['Button']), {
-        \\"ssr\\": false
+        "ssr": false
       });
       const SuperFancyFlexBoxComponent = dynamic(() => import('@ui5/webcomponents-react').then(mod => mod['FlexBox']), {
-        \\"ssr\\": false
+        "ssr": false
       });
       const Form = dynamic(() => import('@ui5/webcomponents-react').then(mod => mod['Form']), {
-        \\"ssr\\": false
+        "ssr": false
       });
       const Grid = dynamic(() => import('@ui5/webcomponents-react').then(mod => mod['Grid']), {
-        \\"ssr\\": false
+        "ssr": false
       });
       const MuchWowLabel = dynamic(() => import('@ui5/webcomponents-react').then(mod => mod['Label']), {
-        \\"ssr\\": false
+        "ssr": false
       });"
     `);
   });
