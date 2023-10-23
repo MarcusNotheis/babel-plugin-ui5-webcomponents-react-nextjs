@@ -1,5 +1,12 @@
 # babel-plugin-ui5-webcomponents-react-nextjs
 
+# Deprecation Notice
+
+This plugin is deprecated as UI5 Web Components for React is now supporting Next.js out of the box.
+You can check out the official [documentation](https://sap.github.io/ui5-webcomponents-react/?path=/docs/knowledge-base-server-side-rendering--docs) for more details.
+
+---
+
 Babel Plugin to allow the usage of [UI5 Web Components for React](https://github.com/SAP/ui5-webcomponents-react) in [Next.js](https://nextjs.org/)
 
 ## Usage
